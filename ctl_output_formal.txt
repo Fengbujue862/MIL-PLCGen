@@ -1,0 +1,17 @@
+1.
+  (这一行阐明该约束的条件,描述)
+SPEC
+  CTL_expression/LTL_expression
+
+2.
+  (这一行阐明该约束的条件,描述)
+SPEC
+  CTL_expression/LTL_expression
+
+
+3.
+  (这一行阐明该约束的条件,描述)
+SPEC
+  CTL_expression/LTL_expression
+
+4. “!” 代表“非”，“&”代表“和，且”，“|”代表“或”，"->"代表"imply"
