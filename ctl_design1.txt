@@ -1,0 +1,29 @@
+1.
+  (The traffic light system must always ensure that exactly one of the lights is on at any given time)
+SPEC
+  AG(GreenLightOn XOR YellowLightOn XOR RedLightOn)
+
+2.
+  (If a pedestrian button is pressed or an emergency vehicle is detected, it implies that the red light for vehicles and green light for pedestrians will be on)
+SPEC
+  (PedestrianButtonPressed | EmergencyVehicleDetected) -> AF(RedLightOn & GreenPedestrianLightOn)
+
+3.
+  (When a pedestrian button is pressed and no emergency vehicle is detected, the system will eventually respond by activating the red light for vehicles and green light for pedestrians)
+SPEC
+  (PedestrianButtonPressed & !EmergencyVehicleDetected) -> AF(RedLightOn & GreenPedestrianLightOn)
+
+4.
+  (If a pedestrian button is pressed and an emergency vehicle is detected, the system will prioritize the emergency vehicle by ensuring its direction has a green light)
+SPEC
+  (PedestrianButtonPressed & EmergencyVehicleDetected) -> AF(GreenLightOn FOR EmergencyVehicleDirection)
+
+5.
+  (When an emergency vehicle is detected and no pedestrian button is pressed, the system will immediately change the traffic light to green for the emergency vehicle's direction)
+SPEC
+  (EmergencyVehicleDetected & !PedestrianButtonPressed) -> AG(GreenLightOn FOR EmergencyVehicleDirection)
+
+6.
+  (If an emergency vehicle is detected and the pedestrian button is pressed, the system will prioritize the emergency vehicle by ensuring its direction has a green light)
+SPEC
+  (EmergencyVehicleDetected & PedestrianButtonPressed) -> AG(GreenLightOn FOR EmergencyVehicleDirection)
