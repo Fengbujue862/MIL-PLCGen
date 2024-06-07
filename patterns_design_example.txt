@@ -1,0 +1,26 @@
+1. Use Case: 【use case description】
+   - Basic Flow: 【basic flow description】
+     Pattern: 【implication/invariant/forbidden/statechange-duringcycle/statechange-betweencycles/reachability/repeatability/leadsto】
+     `{1}`: 【variable status definition】
+   - Alternative Flow: 【alternative flow description】【never ignore it!】
+     Pattern: 【implication/invariant/forbidden/statechange-duringcycle/statechange-betweencycles/reachability/repeatability/leadsto】
+     `{1}`: 【variable status definition】
+
+2. Use Case: 【use case description】
+   - Basic Flow:【basic flow description】
+     1. 【activities description】
+        Pattern:【implication/invariant/forbidden/statechange-duringcycle/statechange-betweencycles/reachability/repeatability/leadsto】
+        `{1}`: 【variable status definition】
+        `{2}`: `【variable status definition】
+     2. 【activities description】
+     3. 【activities description】
+        Pattern: State change during a cycle
+        `{1}`: 【variable status definition】
+        `{2}`: 【variable status definition】
+     4. 【activities description】
+     5. ....
+        Pattern: 【implication/invariant/forbidden/statechange-duringcycle/statechange-betweencycles/reachability/repeatability/leadsto】
+        `{1}`: 【variable status definition】
+        `{2}`: 【variable status definition】
+     ....
+     (REMEMBER,IF {1},{2} ONE VARIABLE CONTAINS SEVERAL METHODS OR ACTIVITIES ,DIVIDE IT)
