@@ -1,0 +1,3 @@
+Write a self-contained 61131-3 structured text program, not a function block,  to control a traffic light system. The system shall react to pedestrian push buttons and to the presence of emergency vehicles to give them priority.
+约束：按下紧急按钮应改变红绿灯的状态 
+同时只存在一个灯开启 

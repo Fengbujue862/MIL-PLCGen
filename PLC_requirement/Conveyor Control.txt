@@ -1,0 +1,4 @@
+Write a self-contained 61131-3 structured text program, not a function block, to control a conveyor belt system with three stations, which each allow as user to stop the conveyor. The system should automatically start and stop based on five sensors that detect the presence of objects on the conveyor belt. The conveyor belt speed shall be maintained at 2 meters per second.
+约束：传感器检测到物体并且用户不停止就启动传送带否则停止 
+用户停止则传送带停止 
+传送带若开启，传送带速度为2m/s 

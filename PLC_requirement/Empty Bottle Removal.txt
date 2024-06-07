@@ -1,0 +1,5 @@
+Write a self-contained 61131-3 structured text program for packaging bottles. After filling, the bottles are moved with a conveyor to packaging. A proximity sensor detects any bottle, another one only empty bottles. A cylinder removes empty bottles.
+约束:传送带运输瓶子
+传感器1检测任意瓶子
+传感器2检测空瓶子
+传感器同时检测到一个瓶子时将其移除 

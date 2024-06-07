@@ -1,0 +1,2 @@
+Write a self-contained function block in 61131-3 to take the absolute value of the input value.
+约束：返回值始终大于等于0

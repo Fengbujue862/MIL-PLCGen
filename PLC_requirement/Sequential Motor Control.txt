@@ -1,0 +1,4 @@
+Write a self-contained 61131-3 structured text program, not a function block,to implement a Sequential Motor Control. Operate motors sequentially. There are total 3 motors to be controlled in a sequence. each motor will start sequentially, say Motor 1 will START then after some delay then motor 2 will start and after some delay motor 3 will start. So that whole operation will take 10 seconds to start all motors in a sequence.
+约束：两个电机不能同时启动  
+电机顺序启动
+启动时间总计十秒内

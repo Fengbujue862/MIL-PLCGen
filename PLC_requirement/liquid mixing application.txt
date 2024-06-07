@@ -1,0 +1,6 @@
+Write a self-contained 61131-3 structured text program, not a function block, to implement a liquid mixing application.in this application pure unmixed solution can be poured into the tank by the operator using button S1 and S2. And mixed solution can be prepared by the operator using button S3. Also, the agitator motor M will be in running while tank is being filled. Operator observes the level of the tank, and Operator can discharge the liquid inside tank by operating valve V1.
+约束：按下按钮S1,倾倒液体1 
+按下按钮S2,倾倒液体2 
+液位达到最高位时，关闭S1 S2,开启M电机搅拌  
+按下按钮S3，关闭S1 S2,开启M电机搅拌 
+开启阀门V1，输出液罐液体  

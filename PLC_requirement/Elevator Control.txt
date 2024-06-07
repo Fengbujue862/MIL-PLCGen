@@ -1,0 +1,5 @@
+Write a self-contained 61131-3 structured text program for controlling an elevator. Every floor of the 5-floor building contains bottom and top limit switches. There is a 7 seconds timer for opening the elevator door, and a 10 seconds timer for opening the door again if none of the buttons inside the elevator cabin are pressed. The elevator operates based on the current direction and the direction imposed by up and call buttons on each floor.
+约束：电梯到达楼层后开门，开门时间为七秒
+电梯关门后10秒如果没有按钮被按下，则电梯开门
+电梯向上运行时，经过楼层有向上按钮被按下，电梯停留该层
+电梯向下运行时，经过楼层有向下按钮被按下，电梯停留该层

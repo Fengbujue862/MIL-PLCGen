@@ -1,0 +1,6 @@
+Write a self-contained 61131-3 structured text program, not a function block, to implement ratio control for mixing two reactants in a 100 to 1 ratio
+约束：混合物比例为100：1
+控制一个混合物的输入速率
+当比例大于100(误差小于2以内)时，减少输入速率 (约束中无法表达浮点数，使用乘法来表达比例)
+当比例小于100(误差在2以内)时，增大输入速率 (约束中无法表达浮点数，使用乘法来表达比例)
+比例接近100(误差在2以内),保持速率

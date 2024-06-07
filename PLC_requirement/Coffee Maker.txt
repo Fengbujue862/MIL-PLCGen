@@ -1,0 +1,10 @@
+Write a self-contained 61131-3 structured text program for a coffee machine.
+This machine contains three tanks, each for coffee, milk, and mixer, and three valves, one for the coffee, one for the milk, and the last valve for the output. This coffee machine contains a mixer, which is required to mix the coffee and milk properly to create the best output, The mixer is designed to work for four seconds after which it will automatically stop and the output valve will open to get the output.
+The mixer is designed with a timer and will automatically start when the mixer tank reaches the maximum level, the tank is attached to the mixer as both the valves of coffee and milk are open and it started to fill the mixer and then the tank level comes into play with the preset maximum level, the mixer tank can be filled up to 130ml as it reaches the maximum level, the valves of coffee and milk will close and then it will start the mixing.
+The coffee machine contains four Push buttons. Button one is for emergency stop, Button two is to start the machine, Button three is for Coffee and Milk and the last button is for Coffee only. The emergency stop is use as a safety button if anything goes wrong in the machine like if any of the valves not open, if the tank level does not work properly, if the mixer fails to work properly or any of the unexpected events occur, then there is a need of emergency stop to stop the machine instantly. 
+约束：用户选择启动机器后，选择模式有效
+用户选择牛奶和咖啡模式，搅拌罐中的液位达到最高液位后，关闭牛奶和咖啡的闸门 
+用户选择牛奶和咖啡模式且搅拌罐中液位达到最高液位后，开启搅拌器，搅拌器运行四秒
+用户选择牛奶和咖啡模式，搅拌器停止运行后，将自动打开搅拌罐的阀门 
+用户选择咖啡模式，搅拌罐中的液位达到最高液位后，关闭咖啡的闸门，打开搅拌罐的阀门
+按下紧急按钮，关闭所有阀门，停止搅拌器 

@@ -1,0 +1,6 @@
+Write a self-contained 61131-3 structured text program to implement PID feedback flow control for the chemical dosing in a water treatment process. Assume a dosing rate of 3 ppm for chlorine and a sampling rate of 100 ms.
+不要使用浮点数变量
+约束：浓度在限定范围
+浓度低于阈值则降低流速 
+浓度高于阈值则提升流速 
+浓度在范围内流速不变

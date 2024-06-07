@@ -1,0 +1,6 @@
+Write a self-contained 61131-3 structured text program, not a function block, to implement a water pump. consider one storage tank for water and use one water pump for tank filling. use one level sensor for high level. START PB for enabling the motor so we can feed the water in the tank, for stop motor we use STOP PB. Level sensor for detection of High level so when tank becomes full, high level sensor will be activated and stops the water pump. For this sequence we will use SET and RESET instruction for latching and unlatching the water pump. We can make this circuit by sing relays. there one discharge valve for discharging the tank.
+约束：高水位时不能注水
+未锁定状态下START PB启动电机
+未锁定状态下STOP PB 关闭电机 
+set用于锁定电机
+reset用于解锁电机 

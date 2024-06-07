@@ -1,0 +1,5 @@
+Write a self-contained IEC 61131-3 Structured Text program to implement PID feedback control for the level in a distillation column. The output signal goes to an inlet valve feeding the column.
+不要使用浮点数变量
+约束：液位在限定范围
+液位低于阈值，打开入口阀 
+液位处于阈值，关闭入口阀 

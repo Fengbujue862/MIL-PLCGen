@@ -1,0 +1,4 @@
+Write a self-contained 61131-3 structured text program, not a function block, to control the temperature of a heating system. The system should automatically turn on and off based on three temperature sensors and maintain a constant temperature range between 20 and 25 degree Celsius. Temperature expressed in integer form
+约束：温度始终在20-25 
+温度低于20则开启升温装置 
+温度高于25则关闭升温装置

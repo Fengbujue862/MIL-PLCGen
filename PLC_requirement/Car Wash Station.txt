@@ -1,0 +1,3 @@
+Write a PLC program in ST according to IEC 61131-3, to create an automatic car wash station with only one station. Station detect if car is there by a sensor and if no human is present (In car wash area) then it start to wash to car. If there is any human detected in the car wash area then car wash station should stop and send an alarm.
+约束：洗车站有车无人则开始出水 
+洗车站有人则停止出水并警报

@@ -1,0 +1,6 @@
+Write a self-contained 61131-3 structured text program, not a function block, to implement PID feedback ph control.
+不要使用浮点数变量
+约束：
+ph在限定范围5-9
+当ph<5，则增大碱性溶液注入速率
+当ph>9,则增大酸性溶液注入速率

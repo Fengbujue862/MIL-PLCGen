@@ -1,0 +1,20 @@
+Write a PLC program in ST according to IEC 61131-3, to create an Entry/Exit Control of the Underground Car Park. 
+These are sensors in the system:
+X1: Photoelectric switch at the ground floor entry/exit. X1 will be ON when a car passes.
+X2: Photoelectric switch at the basement entry/exit. X2 will be ON when a car passes.
+M1: M1 will be ON for one scan cycle when a car from the ground floor passes X1.
+M2: M2 will be ON for one scan cycle when a car from the basement passes X1.
+M3: M3 will be ON for one scan cycle when a car from the basement passes X2.
+M4: M4 will be ON for one scan cycle when a car from the ground floor passes X2.
+Intermediate variables:
+M20: M20 = ON during the process of a car entering the passage from the ground floor.
+M30: M30 = ON during the process of a car entering the passage from the basement.
+These are outputs devices in the system:
+Y1: Red lights at the entry/exit of the ground floor and the basement.
+Y2: Green lights at the entry/exit of the ground floor and the basement.
+Description of the process: 
+"The entry/exit of the underground car park is a single lane passage which needs the traffic lights to control the cars. Red lights prohibit cars entering or leaving while green lights allow cars to enter or leave. When a car enters the passage from the entry of the ground floor, the red lights both on the ground floor and the basement will be ON, and the green lights will be OFF. Any car entering or leaving is prohibited during the process till the car passes through the passage completely. When the passage is clear, the green lights will be ON again and allow other cars entering from the ground floor or the basement. Similarly, when a car leaves the basement and enters the passage, any other car entering or leaving is prohibited till the car passes from the passage to the ground completely. When PLC runs, the initial setting of traffic lights will be green lights ON and red lights OFF." 
+约束：有车辆从一层进入通道时地下室与一层亮起红灯 
+车辆从一层进入地下室后，地下室与一层恢复绿灯 
+有车辆从地下室进入通道时地下室与一层亮起红灯 
+车辆离开停车场后，地下室与一层恢复绿灯
