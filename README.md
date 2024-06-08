@@ -70,3 +70,10 @@ https://nusmv.fbk.eu/downloads.html
 For ST code verif we use PLCverid ou can download and learn form
 
 https://gitlab.com/plcverif-oss/
+
+Please use the following steps to process the counterexample of PLCverify output
+
+1. Copy the counterexample table of PLCverify output
+2. Run counterexample. py
+3. Paste counterexample table
+4. Click Enter
